@@ -18,8 +18,7 @@ class TestGKeep:
             master_token = master_response['Token']
             return master_token
         else:
-            print('A master token could not be generated.')
-            sys.exit(1)
+            sys.exit('A master token could not be generated.')
 
     def login(self):
         """Access your Google Keep Account."""
@@ -27,8 +26,7 @@ class TestGKeep:
             self.keep.authenticate(self.email, self.master_token)
             print('Login successful')
         except LoginException:
-            print('Failure to login')
-            sys.exit(1)
+            sys.exit('Failure to login')
 
     def create_list(self):
         """Create a new list in Google Keep."""
@@ -50,3 +48,4 @@ class TestGKeep:
         print('The following items are in your test list:')
         for item in test_list:
             print(item)
+            

@@ -9,3 +9,6 @@
 
 - **Run the program**
     - python main.py
+
+## How to obtain an oauth token
+- **TODO**

@@ -18,5 +18,3 @@ if __name__ == "__main__":
 
     my_gkeep.create_list() # Create a sample list
     my_gkeep.read_list() # Read the sample list
-
-        
